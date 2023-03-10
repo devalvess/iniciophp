@@ -1,9 +1,9 @@
 <?php
 
-   $titulo =  "Esse é o titulo da pagina";
+   $titulo = "Esse é o titulo da pagina";
    $subtitulo = "Este é o subtitulo da pagina";
 
-   define('TITULO', 'Este titulo é uma constante');
+   define('TITULO',"Esse titulo é uma constante");
 ?>
 
 
