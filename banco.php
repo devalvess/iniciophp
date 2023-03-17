@@ -18,7 +18,6 @@
                     <td>'.$clientes['telefone'].'</td>
                     <td>'.$clientes['ddd'].'</td>
                     <td>'.$clientes['genero'].'</td>
-                    <td>'.$clientes['NASCIMENTO'].'</td>
                     <td> <a href="/editar.php?cliente_id='.$clientes['id'].'">Editar</a> </td>
                 </tr>';
    }
@@ -38,11 +37,11 @@
 <body>
     <table border="1">
         <tr>
+            <td>Id</td>
             <td>Nome</td>
             <td>Telefone</td>
             <td>DDD</td>
             <td>Genero</td>
-            <td>Nascimento</td>
             <td></td>
         </tr>
         <?php echo $listaClientes;?>
