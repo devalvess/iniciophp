@@ -3,13 +3,13 @@
 
 $mysqli = new mysqli("localhost", "root", "root", "padaria");
 
-echo ("update from clientes set nome = '".$_POST['nome']."', telefone = '".$_POST['telefone']."', ddd = '".$_POST['ddd']."', genero = '".$_POST['genero']."' where id = ".$_POST['cliente_id']);
+//echo ("update from clientes set nome = '".$_POST['nome']."', telefone = '".$_POST['telefone']."', ddd = '".$_POST['ddd']."' where id = ".$_POST['cliente_id']);
 
-$mysqli->query("update from clientes set nome = '".$_POST['nome']."', telefone = '".$_POST['telefone']."', ddd = '".$_POST['ddd']."', genero = '".$_POST['genero']."' where id = ".$_POST['cliente_id']);
+$mysqli->query("update from clientes set nome = '".$_POST['nome']."', telefone = '".$_POST['telefone']."', ddd = '".$_POST['ddd']."' where id = ".$_POST['cliente_id']);
 
 ?>
 
-Cliente alterado com sucesso;
+Cliente alterado com sucesso;''
 
 <!DOCTYPE html>
 <html lang="en">

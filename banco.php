@@ -17,7 +17,6 @@
                     <td>'.$clientes['nome'].'</td>
                     <td>'.$clientes['telefone'].'</td>
                     <td>'.$clientes['ddd'].'</td>
-                    <td>'.$clientes['genero'].'</td>
                     <td> <a href="/editar.php?cliente_id='.$clientes['id'].'">Editar</a> </td>
                 </tr>';
    }
@@ -41,7 +40,6 @@
             <td>Nome</td>
             <td>Telefone</td>
             <td>DDD</td>
-            <td>Genero</td>
             <td></td>
         </tr>
         <?php echo $listaClientes;?>
