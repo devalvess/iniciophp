@@ -1,7 +1,7 @@
 
 <?php
 
-    $mysqli = new mysqli("localhost", "root", "root", "padaria");
+    $mysqli = new mysqli("localhost", "root", "root", "loja");
 
 
    // Buscar dados
@@ -15,9 +15,9 @@
     $listaClientes .=  '<tr>
                     <td>'.$clientes['id'].'</td>
                     <td>'.$clientes['nome'].'</td>
-                    <td>'.$clientes['telefone'].'</td>
-                    <td>'.$clientes['ddd'].'</td>
+                    <td>'.$clientes['sobrenome'].'</td>
                     <td> <a href="/editar.php?cliente_id='.$clientes['id'].'">Editar</a> </td>
+                    <td> <a href="/excluir.php?cliente_id='.$clientes['id'].'">Excluir</a> </td>
                 </tr>';
    }
 
@@ -38,11 +38,15 @@
         <tr>
             <td>Id</td>
             <td>Nome</td>
-            <td>Telefone</td>
-            <td>DDD</td>
+            <td>Sobrenome</td>
+            <td></td>
             <td></td>
         </tr>
         <?php echo $listaClientes;?>
     </table>
+
+    <a href="/receivinghtml.php">
+        <button>Cadastrar</button>
+    </a>
 </body>
 </html>

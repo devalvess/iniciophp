@@ -1,7 +1,7 @@
 
 <?php
 
-    $mysqli = new mysqli("localhost", "root", "root", "padaria");
+    $mysqli = new mysqli("localhost", "root", "root", "loja");
 
     $result = $mysqli->query("select * from clientes where id = ".$_GET['cliente_id']);
     $clientes = $result->fetch_assoc();
@@ -20,10 +20,7 @@
 <form action="/salvaAlteracao.php" method="post">
    
    <input type="text" value="<?php echo $clientes['nome']; ?>" name="nome" id="nome" placeholder="Insira seu Nome"> <br>
-   <input type="text" value="<?php echo $clientes['telefone']; ?>" name="telefone" id="telefone" placeholder="Insira seu telefone"> <br>
-   <input type="text" value="<?php echo $clientes['ddd']; ?>" name="ddd" id="ddd" placeholder="Insira seu ddd"> <br>
-
-   
+   <input type="text" value="<?php echo $clientes['sobrenome']; ?>" name="sobrenome" id="sobrenome" placeholder="Insira seu telefone"> <br>
    
    <input type="hidden" name="cliente_id" value="<?php echo $clientes['id']; ?>">
    <input type="submit" value="alterar">

@@ -1,15 +1,13 @@
 <?php 
 
 
-$mysqli = new mysqli("localhost", "root", "root", "padaria");
+$mysqli = new mysqli("localhost", "root", "root", "loja");
 
-//echo ("update from clientes set nome = '".$_POST['nome']."', telefone = '".$_POST['telefone']."', ddd = '".$_POST['ddd']."' where id = ".$_POST['cliente_id']);
+//echo ("update from clientes set nome = '".$_POST['nome']."', sobrenome = '".$_POST['sobrenome']."' where id = ".$_POST['cliente_id']);
 
-$mysqli->query("update from clientes set nome = '".$_POST['nome']."', telefone = '".$_POST['telefone']."', ddd = '".$_POST['ddd']."' where id = ".$_POST['cliente_id']);
+$mysqli->query("update clientes set nome = '".$_POST['nome']."', sobrenome = '".$_POST['sobrenome']."' where id = ".$_POST['cliente_id']);
 
 ?>
-
-Cliente alterado com sucesso;''
 
 <!DOCTYPE html>
 <html lang="en">

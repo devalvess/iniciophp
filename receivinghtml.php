@@ -11,8 +11,7 @@
    <form action="/register.php" method="post">
    
    <input type="text" name="nome" id="nome" placeholder="Insira seu Nome"> <br>
-   <input type="text" name="telefone" id="telefone" placeholder="Insira seu telefone"> <br>
-   <input type="text" name="ddd" id="ddd" placeholder="Insira seu ddd"> <br>
+   <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome"> <br>
    
 
    <input type="submit" value="ENVIAR">
