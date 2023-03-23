@@ -5,7 +5,8 @@ $mysqli = new mysqli("localhost", "root", "root", "loja");
 
 //echo ("update from clientes set nome = '".$_POST['nome']."', sobrenome = '".$_POST['sobrenome']."' where id = ".$_POST['cliente_id']);
 
-$mysqli->query("update clientes set nome = '".$_POST['nome']."', sobrenome = '".$_POST['sobrenome']."' where id = ".$_POST['cliente_id']);
+$mysqli->query("update clientes set nome = '".$_POST['nome']."', 
+sobrenome = '".$_POST['sobrenome']."' where id = ".$_POST['cliente_id']);
 
 ?>
 

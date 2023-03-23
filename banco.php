@@ -5,7 +5,7 @@
 
 
    // Buscar dados
-
+ 
    $result = $mysqli->query("select * from clientes");
 
    //print_r($result);
