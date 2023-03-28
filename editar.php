@@ -1,7 +1,7 @@
 
 <?php
 
-    $mysqli = new mysqli("localhost", "root", "root", "loja");
+    include 'conexao.php';
 
     $result = $mysqli->query("select * from clientes where id = ".$_GET['cliente_id']);
     $clientes = $result->fetch_assoc();

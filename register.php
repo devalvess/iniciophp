@@ -1,6 +1,12 @@
 <?php
   
-  $mysqli = new mysqli("localhost", "root", "root", "loja");
+  include 'conexao.php';
+  include 'funcoes.php';
+
+  if(verificaNome($_POST['nome']) == true) {
+      die('Preencha o campo Nome');
+  }
+
 
   $mysqli->query("insert into clientes
   (`nome`,`sobrenome`)
@@ -18,6 +24,7 @@
 <body>
   <a href="/banco.php">
     <button>Voltar Banco</button>
+    <?php echo $button;?>
   </a>
 </body>
 </html>

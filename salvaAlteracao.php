@@ -1,7 +1,7 @@
 <?php 
 
 
-$mysqli = new mysqli("localhost", "root", "root", "loja");
+include 'conexao.php';
 
 //echo ("update from clientes set nome = '".$_POST['nome']."', sobrenome = '".$_POST['sobrenome']."' where id = ".$_POST['cliente_id']);
 

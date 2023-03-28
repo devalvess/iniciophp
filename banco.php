@@ -1,8 +1,10 @@
 
 <?php
 
-    $mysqli = new mysqli("localhost", "root", "root", "loja");
-
+    include 'conexao.php';
+    include 'funcoes.php';
+    
+    verificaSessao();
 
    // Buscar dados
  
@@ -20,9 +22,6 @@
                     <td> <a href="/excluir.php?cliente_id='.$clientes['id'].'">Excluir</a> </td>
                 </tr>';
    }
-
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +30,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>

@@ -1,12 +1,3 @@
-<?php 
-
-
-include 'conexao.php';
-
-$mysqli->query("delete from clientes  where id = ".$_GET['cliente_id']);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +7,10 @@ $mysqli->query("delete from clientes  where id = ".$_GET['cliente_id']);
     <title>Document</title>
 </head>
 <body>
-    <p>Cliente excluido com sucesso</p>
-    <a href="/banco.php">
-        <button> Voltar</button>
-    </a>
+    <form action="/autenticar.php" method="post">
+        <input type="text" name="login" placeholder="Insira seu Usuario">
+        <input type="password" name="senha" placeholder="Insira sua senha">
+        <input type="submit" value="Logar">
+    </form>
 </body>
 </html>
